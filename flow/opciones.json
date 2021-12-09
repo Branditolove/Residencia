@@ -1,0 +1,269 @@
+{
+    "1": {
+        "label": "1) *Juzgados* \n",
+        "main": [
+            {
+                "message": [
+                    "Escogiste Juzgados, porfavor selecciona a una oficina u area a la que deseas acudir "
+                ]
+            }
+        ],
+        "main_message": [
+            "Escoge del *1 al 15* la opcion que deseas "
+        ],
+        "list":[
+            {
+                "message":[
+                    "1. Primero Familiar"
+                ],
+                "opt":1
+            },
+            {
+                "message":[
+                    "2. Segundo Familiar"
+                ],
+                "opt":2
+            },
+            {
+                "message":[
+                    "3. Tercero Familiar"
+                ],
+                "opt":3
+            },
+            {
+                "message":[
+                    "4. Cuarto Familiar"
+                ],
+                "opt":4
+            },
+            {
+                "message":[
+                    "5. Quinto Familiar"
+                ],
+                "opt":5
+            },
+            {
+                "message":[
+                    "6. Segundo Civil"
+                ],
+                "opt":6
+            },
+            {
+                "message":[
+                    "7. Tercero Civil"
+                ],
+                "opt":7
+            },
+            {
+                "message":[
+                    "8. Cuarto Civil"
+                ],
+                "opt":8
+            },
+            {
+                "message":[
+                    "9. Primero Auxiliar"
+                ],
+                "opt":9
+            },
+            {
+                "message":[
+                    "10. Segundo Auxiliar"
+                ],
+                "opt":10
+            },
+            {
+                "message":[
+                    "11. Primero Mercantil "
+                ],
+                "opt":11
+            },
+            {
+                "message":[
+                    "12. Segundo Mercantil"
+                ],
+                "opt":12
+            },
+            {
+                "message":[
+                    "13. Tercero Mercantil"
+                ],
+                "opt":13
+            },
+            {
+                "message":[
+                    "14. Cuarto Mercantil"
+                ],
+                "opt":14
+            },
+            {
+                "message":[
+                    "15.Juzgado Laboral"
+                ],
+                "opt":15
+            }
+        ]
+    },
+    "2": {
+        "label": " *2* Consejo de Judicatura \n",
+        "main": [
+            {
+                "message": [
+                    "Escogiste  Consejo de Judicatura "
+                ]
+            }
+        ],
+        "main_message": [
+            "Escoge un número  del *1 al 5* para la oficina que deseas ir."
+        ],
+        "list":[
+            {
+                "message":[
+                    "1.Comision De Administracion."
+                ],
+                "opt":1
+            },
+            {
+                "message":[
+                    "2.Comision de Disciplina."
+                ],
+                "opt":2
+            },
+            {
+                "message":[
+                    "3.Comision De Carrera Judicial."
+                ],
+                "opt":3
+            },
+            {
+                "message":[
+                    "4. Comision De Creacion De Nuevos Organos"
+                ],
+                "opt":4
+            },
+            {
+                "message":[
+                    "5. Secretaria Ejecutiva"
+                ],
+                "opt":5
+            }
+        ]
+    },
+    "3": {
+        "label": " *3* Administracion \n",
+        "main": [
+            {
+                "message": [
+                    "Escogiste  Adminstracion"
+                ]
+            }
+        ],
+        "main_message": [
+            "Escoge un número  del *1 al 5* para la oficina que deseas ir."
+        ],
+        "list":[
+            {
+                "message":[
+                    "1.Secretaria Ejecutiva De Adminstracion."
+                ],
+                "opt":1
+            },
+            {
+                "message":[
+                    "2.Recursos Financieros."
+                ],
+                "opt":2
+            },
+            {
+                "message":[
+                    "3.Recursos Humanos."
+                ],
+                "opt":3
+            },
+            {
+                "message":[
+                    "4.Recursos Materiales"
+                ],
+                "opt":4
+            },
+            {
+                "message":[
+                    "5. Servicios Generales"
+                ],
+                "opt":5
+            }
+        ]
+    },
+    "4": {
+        "label": " *4* Universidad Judicial \n",
+        "main": [
+            {
+                "message": [
+                    "Escogiste Universidad Judicial"
+                ]
+            }
+        ],
+        "main_message": [
+            ""
+        ],
+        "list":[
+            {
+                "message":[
+                    "1.Universidad Judicial."
+                ],
+                "opt":1
+            }
+        ]
+    },
+    "5": {
+        "label": " *5* Presidencia/TSJ \n",
+        "main": [
+            {
+                "message": [
+                    "Escogiste Presidencia/TSJ"
+                ]
+            }
+        ],
+        "main_message": [
+            "Escoge un número  del *1 al 6* para la oficina que deseas ir."
+        ],
+        "list":[
+            {
+                "message":[
+                    "1.Presidencia."
+                ],
+                "opt":1
+            },
+            {
+                "message":[
+                    "2.Secretaria General."
+                ],
+                "opt":2
+            },
+            {
+                "message":[
+                    "3.Secretaria De Acuerdos De Sala Civil Colegiala"
+                ],
+                "opt":3
+            },
+            {
+                "message":[
+                    "4.Secretaria De Acuerdos De Salas Civiles Unitarias"
+                ],
+                "opt":4
+            },
+            {
+                "message":[
+                    "5. Secretaria De Acuerdos De Sala Penal Colegiala *A*"
+                ],
+                "opt":5
+            },
+            {
+                "message":[
+                    "6.Secretaria De Acuerdos De Sala Penales Unitarias *B*"
+                ],
+                "opt":6
+            }
+        ]
+    }
+}
