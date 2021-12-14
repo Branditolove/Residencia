@@ -1,0 +1,12 @@
+{
+    "STEP_1":[
+        "Hola Bienvenido al *Poder Judicial Durango.*🖐️😃\n",
+        "Escribe *menu*, para poder ayudarte."
+    ],
+    "STEP_2":[
+        "DE ACUERDO😃 Selecciona con un numero del *1 al 5* a la oficina que deseas acudir\n"
+    ],
+    "STEP_ERROR":[
+        "Disculpame no comprendo lo que me escribes."
+    ]
+}
