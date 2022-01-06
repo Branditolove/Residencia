@@ -2,7 +2,7 @@ const { MongoClient, ObjectId } = require('mongodb');
 
 
 
-const MONGO_URI = "mongodb+srv://admin:1234@cluster0.thj91.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+const MONGO_URI = 
 
 class MongoLib {
   constructor() {
