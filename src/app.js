@@ -14,6 +14,8 @@ const respuestas = require("../flow/respuestas.json");
 const messages = require("../flow/mensajes.json");
 const opciones = require("../flow/opciones.json");
 
+const mongo=require("./mongo.js")
+
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 
@@ -125,8 +127,6 @@ const withOutSession = () => {
   client.initialize();
 };
 
-const init = []
-
 const connectionReady = () => {
   client.on("message", async (msg) => {
     let { body } = msg;
@@ -135,14 +135,12 @@ const connectionReady = () => {
     body = body.toLowerCase();
 
     if (respuestas.STEP_1.includes(body)) {
-      init.push[1]
       console.log("STEP1", body);
       sendMessage(from, messages.STEP_1.join(""));
       return;
     }
     
     if (respuestas.STEP_2.includes(body)) {
-      init.push[1]
       const step2 = messages.STEP_2.join("");
       const parseLabel = Object.keys(opciones)
         .map((o) => {
@@ -160,34 +158,66 @@ const connectionReady = () => {
     if (opciones[body.toUpperCase()]) {
       const optionSelected = opciones[body.toUpperCase()];
 
-      sendMessage(from, optionSelected.main[0].message[0]);
-      sendMessage(from, optionSelected.main_message[0]);
+      sendMessage(from, optionSelected.main.message);
 
       const options = Object.keys(optionSelected.list).map((option) => optionSelected.list[option].message);
 
       sendMessage(from, options.join("\n"));
     }
 
-    if(body.toUpperCase().includes('J')){
-        const [option] = Object.keys(opciones).map(optionKey => {
+    const letterOptions = ['J','C','A','U','P']
+    const optionWithLetter = body.toUpperCase()
+    const letter = optionWithLetter.split('')[0]
+    
+    if(letterOptions.includes(letter)){
+        const options = Object.keys(opciones).map(optionKey => {
+          if (opciones[`${optionKey}`].list[body.toUpperCase()] !== undefined){
             return opciones[`${optionKey}`].list[body.toUpperCase()]
+          }
         })
-        sendMessage(from, `Elegiste ${option.message}`);
-    }
 
-    if (opciones[body]) {
-        writeStream.write(`${body}123`, 'utf8');
+        const getMainOption = {
+          J: 'juzgados',
+          C: 'consejo',
+          A: 'administracion',
+          U: 'universidad',
+          P: 'presidencia'
+        }
 
-        // the finish event is emitted when all data has been flushed from the stream
-        writeStream.on('finish', () => {
-            console.log('wrote all data to file');
-        });
+        retiveLastTurn(body, getMainOption[letter])
 
-        writeStream.end();
+        options.forEach(option => {
+          if (option !== undefined) {
+            sendMessage(from, `Elegiste ${option.message}`);
+          }
+        })
+        
     }
 
   });
 };
+
+const retiveLastTurn = async (subOption, mainOption) => {
+  const Mongodb = new mongo();
+
+ const last = await Mongodb.getlast(mainOption)
+  
+  if (last.length === 0){
+    Mongodb.insert(mainOption, {
+      createdAt: new Date(),
+      ticket: `${subOption}-0`
+    })
+  } else {
+    console.log(last)
+    const turn = last[0].ticket.split('-')[1]
+
+     Mongodb.insert(mainOption, {
+      createdAt: new Date(),
+      ticket: `${subOption}-${parseInt(turn) + 1}`
+    })
+  }
+}
+
 
 /**
  * Guardar historial de conversacion
@@ -331,10 +361,19 @@ app.get("/qr", (req, res) => {
   fs.createReadStream(`./qr-code.svg`).pipe(res);
 });
 
-app.get("/ticket", (req, res) => {
-  res.send("tu ticket es el 10");
+app.get("/ticket/:mainOption", async (req, res) => {
+  const { mainOption } = req.params
+  const db = new mongo();
+  const last = await db.getlast(mainOption)
+
+  if (last.length > 0) {
+    res.status(200).json({
+      turn: last[0].ticket
+    })
+  }
 });
 
-app.listen(9000, () => {
+app.listen(8000, () => {
   console.log("Server ready!");
 });
+

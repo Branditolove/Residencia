@@ -5,19 +5,23 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./src/app.js"
+    "dev": "nodemon ./src/app.js",
+    "start": "node ./src/app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
+    "duckly": "^0.1.1",
     "exceljs": "^4.3.0",
     "express": "^4.17.1",
     "moment": "^2.29.1",
+    "mongodb": "^4.2.2",
     "qr-image": "^3.2.0",
     "qrcode-image": "^0.1.0",
     "qrcode-terminal": "^0.12.0",
+    "share": "^0.7.40",
     "whatsapp-web.js": "^1.15.3"
   },
   "devDependencies": {

@@ -1,212 +1,143 @@
 {
     "1": {
         "label": "1. *Juzgados* \n",
-        "main": [
-            {
-                "message": [
-                    "Escogiste Juzgados, porfavor selecciona a una oficina u area a la que deseas acudir "
-                ]
-            }
-        ],
-        "main_message": [
-            "Escoge del *1 al 15* la opcion que deseas "
-        ],
+        "main": {
+            "message": "Escogiste Juzgados, porfavor selecciona a una oficina u area a la que deseas acudir "
+        },
+        "main_message": "Escoge del *1 al 15* la opcion que deseas ",
         "list": {
             "J1": {
                 "message": "J1. Primero Familiar"
             },
             "J2": {
                 "message": "J2. Segundo Familiar"
-
             },
             "J3": {
                 "message": "J3. Tercero Familiar"
             },
             "J4": {
-                "message":[
-                    "4. Cuarto Familiar"
-                ]
+                "message": "4. Cuarto Familiar"
             },
-            "J5":  {
-                "message":[
-                    "5. Quinto Familiar"
-                ]
+            "J5": {
+                "message": "5. Quinto Familiar"
             },
-            "J6":
-            {
-                "message":[
-                    "6. Segundo Civil"
-                ]
+            "J6": {
+                "message": "6. Segundo Civil"
             },
             "J7": {
-                "message":[
-                    "7.Tercero Civil"
-                ]
+                "message": "7.Tercero Civil"
             },
             "J8": {
-                "message":[
-                    "8 Cuarto Civil"
-                ]
+                "message": "8 Cuarto Civil"
             },
             "J9": {
-                "message":[
-                    "9 Primero Auxiliar"
-                ]
+                "message": "9 Primero Auxiliar"
             },
             "J10": {
-                "message":[
-                    "10. Segundo Auxiliar"
-                ]
+                "message": "10. Segundo Auxiliar"
             },
             "J11": {
-                "message":[
-                    "11. Primero Mercantil"
-                ]
+                "message": "11. Primero Mercantil"
             },
             "J12": {
-                "message":[
-                    "12. Segundo Mercantil"
-                ]
+                "message": "12. Segundo Mercantil"
             },
             "J13": {
-                "message":[
-                    "13. Tercero Mercantil"
-                ]
+                "message": "13. Tercero Mercantil"
             },
-            "J14":
-            {
-                "message":[
-                    "14. Cuarto Mercantil"
-                ]
+            "J14": {
+                "message": "14. Cuarto Mercantil"
             },
             "J15": {
-                "message":[
-                    "15. Juzgado Laboral"
-                ]
+                "message": "15. Juzgado Laboral"
             }
-            
         }
     },
     "2": {
-        "label": "2.*Escogiste  Consejo de Judicatura *\n",
-        "main": [
-            {
-                "message": [
-                    "Escogiste Consejo de Judicatura, porfavor selecciona a una oficina u area a la que deseas acudir "
-                ]
-            }
-        ],
-        "main_message": [
-            "Escoge del *1 al 5* la opcion que deseas "
-        ],
+        "label": "*Consejo de Judicatura*\n",
+        "main": {
+            "message": "Escogiste Consejo de Judicatura, porfavor selecciona a una oficina u area a la que deseas acudir "
+        },
+        "main_message": "Escoge del *1 al 5* la opcion que deseas ",
         "list": {
             "C1": {
-                "message":[ "*C1* 1.Comision De Administracion."]
+                "message": "*C1* 1.Comision De Administracion."
             },
             "C2": {
-                "message": ["*C2*. Comision de Disciplina."]
-
+                "message": "*C2*. Comision de Disciplina."
             },
             "C3": {
-                "message": ["*C3*. Comision De Carrera Judicial."]
+                "message": "*C3*. Comision De Carrera Judicial."
             },
             "C4": {
-                "message":[
-                    "*C4*.  Comision De Creacion De Nuevos Organos"
-                ]
+                "message": "*C4*.  Comision De Creacion De Nuevos Organos"
             },
-            "C5":  {
-                "message":[
-                    "*C5*. Secretaria Ejecutiva"
-                ]}
+            "C5": {
+                "message": "*C5*. Secretaria Ejecutiva"
+            }
         }
     },
     "3": {
         "label": "3. *Administracion* \n",
-        "main": [
-            {
-                "message": [
-                    "Escogiste Administracion, porfavor selecciona a una oficina u area a la que deseas acudir "
-                ]
-            }
-        ],
-        "main_message": [
-            "Escoge del *1 al 5* la opcion que deseas "
-        ],
+        "main": {
+            "message": "Escogiste Administracion, porfavor selecciona a una oficina u area a la que deseas acudir "
+        },
+        "main_message": "Escoge del *1 al 5* la opcion que deseas ",
         "list": {
             "A1": {
-                "message": ["*A1* Secretaria Ejecutiva De Adminstracion."]
+                "message": "*A1* Secretaria Ejecutiva De Adminstracion."
             },
             "A2": {
-                "message": ["*A2*. Recursos Financieros"]
-    
+                "message": "*A2*. Recursos Financieros"
             },
             "A3": {
-                "message":["*A3*. Recursos Humanos."]
+                "message": "*A3*. Recursos Humanos."
             },
             "A4": {
-                "message":[
-                    "*A4*. .Recursos Materiales"
-                ]
+                "message": "*A4*. .Recursos Materiales"
             },
-            "A5":  {
-                "message":[
-                    "*A5*. Servicios Generales"
-                ]
+            "A5": {
+                "message": "*A5*. Servicios Generales"
             }
-            
         }
     },
     "4": {
-        "label": "4. *4* Universidad Judicial \n",
-        "main": [
-            {
-                "message": [
-                    "Escogiste Universidad Judicial, porfavor selecciona a una oficina u area a la que deseas acudir "
-                ]
-            }
-        ],
-        "main_message": [
-            "Escoge del la opcion que deseas "
-        ],
+        "label": "*Universidad Judicial* \n",
+        "main": {
+            "message": "Escogiste Universidad Judicial, porfavor selecciona a una oficina u area a la que deseas acudir "
+        },
+        "main_message": "Escoge del la opcion que deseas ",
         "list": {
             "U1": {
-                "message":[ "*A1* Universidad Judicial."]
+                "message": "*A1* Universidad Judicial."
             }
         }
     },
-"5": {
-    "label": "*5* Presidencia/TSJ \n",
-    "main": [
-        {
-            "message": [
-                "Escogiste Presidencia/TSJ, porfavor selecciona a una oficina u area a la que deseas acudir "
-            ]
+    "5": {
+        "label": "*Presidencia/TSJ*\n",
+        "main": {
+            "message": "Escogiste Presidencia/TSJ, porfavor selecciona a una oficina u area a la que deseas acudir "
+        },
+        "main_message": "Escoge del *1 al 6* la opcion que deseas ",
+        "list": {
+            "P1": {
+                "message": "*P1* Presidencia."
+            },
+            "P2": {
+                "message": "*P2*.Secretaria General."
+            },
+            "P3": {
+                "message": "*P3* Secretaria De Acuerdos De Sala Civil Colegiala"
+            },
+            "P4": {
+                "message": "*P4* Secretaria De Acuerdos De Salas Civiles Unitarias"
+            },
+            "P5": {
+                "message": "*P5*. Secretaria De Acuerdos De Sala Penal Colegiala *A*"
+            },
+            "P6": {
+                "message": "*P6*.Secretaria De Acuerdos De Sala Penales Unitarias *B*"
+            }
         }
-    ],
-    "main_message": [
-        "Escoge del *1 al 6* la opcion que deseas "
-    ],
-    "list": {
-        "P1":{ 
-            "message": ["*P1* Presidencia."]
-        },
-        "P2":{
-            "message":["*P2*.Secretaria General."]
-        },
-        "P3":{
-            "message":["*P3* Secretaria De Acuerdos De Sala Civil Colegiala"]
-        },
-        "P4":{
-            "message":["*P4* Secretaria De Acuerdos De Salas Civiles Unitarias"]
-        },
-        "P5":{
-            "message": ["*P5*. Secretaria De Acuerdos De Sala Penal Colegiala *A*"]
-        },
-        "P6":{
-            "message": ["*P6*.Secretaria De Acuerdos De Sala Penales Unitarias *B*"]
-             }    
-
     }
-}
 }
